@@ -9,7 +9,7 @@ def solve(maze,x,y,sol):
         sol[x][y] = 1
         return True
 
-    if isLegal(maze, x , y) == True:         #check is if rat can be moved to x,y position
+    if isLegal(maze, x , y) == True:         #check if rat can be moved to x,y position
         sol[x][y]=1
         if solve(maze,x+1,y,sol):            #move in x directon
             return True
